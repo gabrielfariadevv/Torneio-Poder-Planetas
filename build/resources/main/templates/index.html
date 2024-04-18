@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Torneio do Poder</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+<h1>Bem-vindo ao torneio do Poder!</h1>
+
+<h3>Planetas:</h3>
+
+<tr th:each=" planet : ${planets}">
+    <span th:text="${planet.planetName}"></span>
+    <span th:text="${planet.location}"></span>
+    <span th:text="${planet.ruler}"></span>
+    <span th:text="${planet.topScorer}"></span>
+    <p></p>
+</tr>
+
+</body>
+</html>
